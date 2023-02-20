@@ -26,7 +26,7 @@ for i in range(4, 7):
     upper_3tries = mean_3tries + 1.96 * std_3tries
     lower_3tries = mean_3tries - 1.96 * std_3tries
     plt.fill_between(df_3tries['Date'], upper_3tries, lower_3tries, alpha=0.3, color=color)
-plt.plot(xlsx['Date'].values, xlsx['7 or more tries (X)'].values,label="7 or more tries (X)",color='blue') # 紫色
+plt.plot(xlsx['Date'].values, xlsx['7 or more tries (X)'].values,label="7 or more tries (X)",color='blue')
 df_3tries = xlsx[['Date','7 or more tries (X)']]
 mean_3tries = df_3tries['7 or more tries (X)'].mean()
 std_3tries = df_3tries['7 or more tries (X)'].std()

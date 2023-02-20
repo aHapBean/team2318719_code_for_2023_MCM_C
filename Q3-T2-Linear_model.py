@@ -53,7 +53,7 @@ plt.scatter(difficulty,avg_accuracy)
 plt.ylabel("the times of success")
 plt.show()
 
-ini_point = np.array([difficulty, attri1, attri2, attri3, attri4, attri6]).T # (359, 6)
+ini_point = np.array([difficulty, attri1, attri2, attri3, attri4, attri6]).T
 interval_nums = 6
 length = 25 - (-5)
 span = length / interval_nums
